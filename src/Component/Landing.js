@@ -7,7 +7,7 @@ function Landing(){
 
     <div id="title">
         <h1 id="nameHome">10X Team 04</h1>
-        <Link to={"/instaclone"}><button id="btnHome">Enter</button></Link>
+        <Link to={"/instaclone/AllPost"}><button id="btnHome">Enter</button></Link>
     </div>
     </div>
       
