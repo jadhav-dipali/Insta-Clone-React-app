@@ -7,7 +7,6 @@ export const UserContext =createContext() ;
 
 
 export default function ContextPost({children}){
-    // let  = "hello world";
     let [user, setUser] = useState([])
 
     useEffect( ()=>{

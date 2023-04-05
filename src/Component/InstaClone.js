@@ -2,7 +2,7 @@ import '../style/InstaClone.css';
 import UserPost from './UserPost';
 import instaLogo from '../images/instaLogo.png';
 import Posts from './Posts';
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import cameraLogo from '../images/camera-logo.png';
 import TopNav from './TopNav';
 import {useState} from "react"
@@ -13,7 +13,7 @@ function InstaClone(){
     <div id='parent'>
       <TopNav />
     <div>
-       <UserPost  />
+       <Outlet/>
     </div>
     </div>
     </>

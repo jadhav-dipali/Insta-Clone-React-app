@@ -13,7 +13,7 @@ function TopNav(){
         <img src={instaLogo} id='logo'></img>
          <h1 id='heading'>InstaClone</h1>
        
-         <Link to="posts" element={<Posts/>}> <img src={cameraLogo} id='logo-cam'></img></Link>
+         <Link to="/instaclone/posts"> <img src={cameraLogo} id='logo-cam'></img></Link>
       
     </nav>
     </>

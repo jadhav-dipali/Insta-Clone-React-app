@@ -5,6 +5,7 @@ import Landing from "./Landing";
 // import Home from "./Landing";
 // import InstaClone from "./InstaClone";
 import Posts from "./Posts";
+import UserPost from "./UserPost";
 
 
 
@@ -14,8 +15,11 @@ function AppRouter(){
     <BrowserRouter>
     <Routes>
         <Route path="/" element={<Landing />} />
-        <Route path="instaclone" element={<InstaClone />} />
-        <Route path="instaclone/posts" element={<Posts/>}/>
+        <Route path="instaclone" element={<InstaClone />} >
+           <Route path="posts" element={<Posts/>}/>
+           <Route path="AllPost" element={<UserPost/>}/>
+        </Route>
+        
     </Routes>
     </BrowserRouter>
   

@@ -12,6 +12,7 @@ import { UserContext } from '../context/ContextPost';
 
 function Posts(){
      let{setUser} = useContext(UserContext)
+
     let navigator = useNavigate();
     let [data , setData]= useState({
         file:"",
@@ -37,9 +38,9 @@ function Posts(){
     );
      
     }
+
+    let [loder,setLoder] = useState("");
     return<>
-    <div id='parent'>
-        <TopNav/>
        <div className='rect'>
         <form id='form' onSubmit={post}>
           <input type="file" placeholder='choose the file' id='file'name='file'  onChange={(e)=>{setData({...data, file:e.target.value})}} value={data.file} required accept='image/png,image/jpg'></input><br/><br/>
@@ -48,13 +49,29 @@ function Posts(){
           <input type="text" placeholder='Location'className='name-name' id='location'  name="location"  onChange={(e)=>{setData({...data, location:e.target.value})}} value={data.location}  required></input><br/><br></br>
           <input type="text" placeholder="Description" id="descript" name='description'  onChange={(e)=>{setData({...data, description:e.target.value})}} value={data.description} required></input><br/><br/>
 
-          <button type='submit' id='btn' >Post</button> 
+         <div id='form-loder'>
+          <div className={loder}></div>
+          <div className={loder}></div>
+          <div className={loder}></div>
+          <div className={loder}></div>
+          <div className={loder}></div>
+          <div className={loder}></div>
+          <div className={loder}></div>
+          <div className={loder}></div>
+          <div className={loder}></div>
+          <div className={loder}></div>
+          <div className={loder}></div>
+          <div className={loder}></div>
+          <div className={loder}></div>
+        </div><br></br>
+
+          <button type='submit' id='btn' onClick={()=>setLoder("LoderSubmit")}>Post</button> 
           
          
         </form>
         
     </div>  
-    </div>
+  
     </>
 }
 export default Posts;
