@@ -34,13 +34,13 @@ console.log(user);
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT78Q1WZHbkR3u23R2_3GLTlVEiiPLpZozQUA&usqp=CAU " className="icon"></img>
         <img src="https://cdn4.iconfinder.com/data/icons/office-line-vol-2-1/70/send__message__mail__paperplane__rocket-512.png" className="icon"></img>
 
-        <h5 id="date">{new Date().toLocaleDateString()}</h5>
+        <h5 id="date">{d.date}</h5>
     </div>
 
-    <div className="like">0 Likes</div>
+    <div className="like">{`0 Likes `}</div>
 
     <div id="description">{d.description}</div>
-   
+    
     
     </div>)}
     

@@ -49,8 +49,21 @@ function Posts(){
           <input type="text" placeholder='Location'className='name-name' id='location'  name="location"  onChange={(e)=>{setData({...data, location:e.target.value})}} value={data.location}  required></input><br/><br></br>
           <input type="text" placeholder="Description" id="descript" name='description'  onChange={(e)=>{setData({...data, description:e.target.value})}} value={data.description} required></input><br/><br/>
 
-
-           <div id={loder}></div>
+         <div id='form-loder'>
+          <div className={loder}></div>
+          <div className={loder}></div>
+          <div className={loder}></div>
+          <div className={loder}></div>
+          <div className={loder}></div>
+          <div className={loder}></div>
+          <div className={loder}></div>
+          <div className={loder}></div>
+          <div className={loder}></div>
+          <div className={loder}></div>
+          <div className={loder}></div>
+          <div className={loder}></div>
+          <div className={loder}></div>
+        </div><br></br>
 
           <button type='submit' id='btn' onClick={()=>setLoder("LoderSubmit")}>Post</button> 
           

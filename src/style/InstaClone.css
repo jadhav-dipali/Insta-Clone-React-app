@@ -102,25 +102,32 @@ input:focus{
     border-color: rgb(152, 228, 152);
     box-shadow: 2px 2px 7px rgb(152, 228, 152) ;
 }
-#LoderSubmit{
-    border: 10px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 10px solid #3498db;
-    width: 40px;
-    height: 40px;
-    -webkit-animation: spin 2s linear infinite; /* Safari */
-    animation: spin 2s linear infinite;
-    margin-left: auto;
-    margin-right: auto;
+.LoderSubmit{
+  display: inline-block;
+  background-color: rgb(233, 131, 131);
+  height: 15px;
+  width: 15px;
+  font-size: 1px;
+  padding: 1px;
+  color: white;
+  margin-right: 5px;
+  margin-left: 5px;
+  animation: skew 1s infinite;
+  transform: skew(20deg);
+  animation-direction: alternate;
+  opacity: .7;
   }
   
   /* Safari */
-  @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
+  @keyframes skew {
+    0% {
+      transform: skewX(20deg);
+    }
+    100% {
+      transform: skewX(-20deg);
+    }
+  }
+  #form-loder{
+    text-align: center;
   }
   
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
